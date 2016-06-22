@@ -26,4 +26,5 @@
   box-sizing: content-box;
   height: 22px;
   padding: 8px;
+  display: inline-block;
 }
