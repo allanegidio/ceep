@@ -1,8 +1,9 @@
 .header {
-  background-color: #51B0DC;
+  background-color: #0082C7;
   height: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
+  margin-bottom: 40px;
 }
 
 .header-title {
@@ -15,7 +16,7 @@
   float: right;
 }
 
-.header-button: first-child {
+.header-button:first-child {
   margin-right: 15px;
 }
 

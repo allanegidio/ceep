@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Ceep</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/block/header.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/block/card.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header container">
-      <h1 class="header-title">Ceep</h1>
-      <nav class="header-menu">
-        <ul>
-          <li class="header-button">
-            <a href="#">Linhas</a>
-          </li>
-          <li class="header-button">
-            <a href="#">?</a>
-          </li>
-        </ul>
-      </nav>
+        <h1 class="header-title">Ceep</h1>
+        <nav class="header-menu">
+            <ul>
+                <li class="header-button">
+                    <a href="#">Linhas</a>
+                </li>
+                <li class="header-button">
+                    <a href="#">?</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section class="container">
         <ol>
-          <li class="card card_colorFirst">
-            <nav class="wrap-card-colors">
-              <ul>
-                <li class="card-colors card-colors_colorFirst"><a href="#">Azul</a></li>
-                <li class="card-colors card-colors_colorSecond"><a href="#">Vermelho</a></li>
-                <li class="card-colors card-colors_colorThird"><a href="#">Verde</a></li>
-                <li class="card-colors card-colors_colorFourth"><a href="#">Amarelo</a></li>
-              </ul>
-            </nav>
-            <p>
-              Aqui é Body Builder Ipsum PORRA! Sai filho da puta! AHHHHHHHHHHHHHHHHHHHHHH..., porra! Vamo monstro! Vai subir árvore é o caralho porra! É 13 porra! É nóis caraio é trapezera buscando caraio!
-            </p>
-          </li>
-          <li class="card card_colorSecond">
-            <nav class="wrap-card-colors">
-              <ul>
-                <li class="card-colors card-colors_colorFirst"><a href="#">Azul</a></li>
-                <li class="card-colors card-colors_colorSecond"><a href="#">Vermelho</a></li>
-                <li class="card-colors card-colors_colorThird"><a href="#">Verde</a></li>
-                <li class="card-colors card-colors_colorFourth"><a href="#">Amarelo</a></li>
-              </ul>
-            </nav>
-            <p>
-              Vem porra! É verão o ano todo vem cumpadi. Sabe o que é isso daí? Trapézio descendente é o nome disso aí. Que não vai dá rapaiz, não vai dá essa porra. Ajuda o maluco que tá doente. Aqui nóis constrói fibra, não é água com músculo.
-            </p>
-          </li>
-          <li class="card card_colorThird">
-            <nav class="wrap-card-colors">
-              <ul>
-                <li class="card-colors card-colors_colorFirst"><a href="#">Azul</a></li>
-                <li class="card-colors card-colors_colorSecond"><a href="#">Vermelho</a></li>
-                <li class="card-colors card-colors_colorThird"><a href="#">Verde</a></li>
-                <li class="card-colors card-colors_colorFourth"><a href="#">Amarelo</a></li>
-              </ul>
-            </nav>
-            <p>
-              Vo derrubar tudo essas árvore do parque ibirapuera. É esse que a gente quer, é ele que nóis vamo buscar. É 13 porra! Eu quero esse 13 daqui a pouquinho aí. Boraaa, Hora do Show Porra. É 37 anos caralho!
-            </p>
-          </li>
-          <li class="card card_colorFourth">
-            <nav class="wrap-card-colors">
-              <ul>
-                <li class="card-colors card-colors_colorFirst"><a href="#">Azul</a></li>
-                <li class="card-colors card-colors_colorSecond"><a href="#">Vermelho</a></li>
-                <li class="card-colors card-colors_colorThird"><a href="#">Verde</a></li>
-                <li class="card-colors card-colors_colorFourth"><a href="#">Amarelo</a></li>
-              </ul>
-            </nav>
-            <p>
-              Vem porra! Negativa Bambam negativa. Que não vai dá rapaiz, não vai dá essa porra. É 37 anos caralho! Vai subir árvore é o caralho porra! É 13 porra!
-            </p>
-          </li>
+            <li class="card" data-color="first">
+                <nav class="wrap-card-options">
+                    <ul>
+                        <li class="card-options card_edit"><a href="#">Editar</a></li>
+                        <li class="card-options card_delete"><a href="#">Excluir</a></li>
+                        <li class="card-options isActive" data-color="first"><a href="#">Azul</a></li>
+                        <li class="card-options" data-color="second"><a href="#">Vermelho</a></li>
+                        <li class="card-options" data-color="third"><a href="#">Verde</a></li>
+                        <li class="card-options" data-color="fourth"><a href="#">Amarelo</a></li>
+                    </ul>
+                </nav>
+                <p class="card-content" contenteditable="false">
+                    Aqui é Body Builder Ipsum PORRA! Sai filho da puta! AHHHHHHHHHHHHHHHHHHHHHH..., porra! Vamo monstro! Vai subir árvore é o caralho porra! É 13 porra! É nóis caraio é trapezera buscando caraio!
+                </p>
+            </li>
+            <li class="card" data-color="second">
+                <nav class="wrap-card-options">
+                    <ul>
+                        <li class="card-options card-delete"><a href="#">Excluir</a></li>
+                        <li class="card-options" data-color="first"><a href="#">Azul</a></li>
+                        <li class="card-options isActive" data-color="second"><a href="#">Vermelho</a></li>
+                        <li class="card-options" data-color="third"><a href="#">Verde</a></li>
+                        <li class="card-options" data-color="fourth"><a href="#">Amarelo</a></li>
+                    </ul>
+                </nav>
+                <p>
+                    Vem porra! É verão o ano todo vem cumpadi. Sabe o que é isso daí? Trapézio descendente é o nome disso aí. Que não vai dá rapaiz, não vai dá essa porra. Ajuda o maluco que tá doente. Aqui nóis constrói fibra, não é água com músculo.
+                </p>
+            </li>
+            <li class="card" data-color="third">
+                <nav class="wrap-card-options">
+                    <ul>
+                        <li class="card-options card-delete"><a href="#">Excluir</a></li>
+                        <li class="card-options" data-color="first"><a href="#">Azul</a></li>
+                        <li class="card-options" data-color="second"><a href="#">Vermelho</a></li>
+                        <li class="card-options isActive" data-color="third"><a href="#">Verde</a></li>
+                        <li class="card-options" data-color="fourth"><a href="#">Amarelo</a></li>
+                    </ul>
+                </nav>
+                <p>
+                    Vo derrubar tudo essas árvore do parque ibirapuera. É esse que a gente quer, é ele que nóis vamo buscar. É 13 porra! Eu quero esse 13 daqui a pouquinho aí. Boraaa, Hora do Show Porra. É 37 anos caralho!
+                </p>
+            </li>
+            <li class="card" data-color="fourth">
+                <nav class="wrap-card-options">
+                    <ul>
+                        <li class="card-options card-delete"><a href="#">Excluir</a></li>
+                        <li class="card-options" data-color="first"><a href="#">Azul</a></li>
+                        <li class="card-options" data-color="second"><a href="#">Vermelho</a></li>
+                        <li class="card-options" data-color="third"><a href="#">Verde</a></li>
+                        <li class="card-options isActive" data-color="fourth"><a href="#">Amarelo</a></li>
+                    </ul>
+                </nav>
+                <p>
+                    Vem porra! Negativa Bambam negativa. Que não vai dá rapaiz, não vai dá essa porra. É 37 anos caralho! Vai subir árvore é o caralho porra! É 13 porra!
+                </p>
+            </li>
         </ol>
     </section>
-  </body>
+    <script type="text/javascript" src="javascript/block/card.js"></script>
+</body>
+
 </html>

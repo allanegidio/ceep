@@ -1,5 +1,10 @@
+.wrap-card-options{
+  position: absolute;
+  top: -16px;
+  left: 0px;
+}
+
 .card{
-  background-color: #EBEF40;
   padding: 16px;
   display: inline-block;
   box-sizing: border-box;
@@ -7,39 +12,7 @@
   position: relative;
 }
 
-.card_colorFirst{
-  background-color: #45AAEE;
-}
-
-.card_colorSecond{
-  background-color: #FF1010;
-}
-
-.card_colorThird {
-  background-color: #76EF40;
-}
-
-.card_colorFourth {
-  background-color: #EBEF40;
-}
-
-.card-colors_colorFirst{
-  background-color: #45AAEE;
-}
-
-.card-colors_colorSecond{
-  background-color: #FF1010;
-}
-
-.card-colors_colorThird {
-  background-color: #76EF40;
-}
-
-.card-colors_colorFourth {
-  background-color: #EBEF40;
-}
-
-.card-colors {
+.card-options {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -47,10 +20,46 @@
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid #000000;
+  box-sizing: border-box;
+  background-color: #FFF;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.wrap-card-colors{
-  position: absolute;
-  top: -16px;
-  left: 0px;
+.card-options.isActive {
+  border-width: 4px;
+}
+
+.card-content[contenteditable="true"]{
+  outline: 2px dotted rgba(0,0,0,0.5);
+}
+
+
+.card_delete {
+  background-image: url(../../images/delete.svg);
+  background-size: 70%;
+}
+
+.card_edit {
+  background-image : url(../../images/edit.svg);
+  background-size: 65%;
+}
+
+
+
+
+[data-color="first"] {
+  background-color: #45AAEE;
+}
+
+[data-color="second"] {
+  background-color: #FF1010;
+}
+
+[data-color="third"] {
+  background-color: #76EF40;
+}
+
+[data-color="fourth"] {
+  background-color: #EBEF40;
 }
