@@ -5,8 +5,7 @@ for (var i = 0; i < $cards.length; i++) {
   $cards[i].addEventListener('click', function (event){
     var $this = event.target;
     var $card = this;
-    console.log($card);
-    console.log(this);
+
     if($this.dataset.color){
       $card.dataset.color = $this.dataset.color;
 
@@ -21,6 +20,18 @@ for (var i = 0; i < $cards.length; i++) {
       $card.remove();
     }
 
+    if($this.classList.contains('card_edit')) {
+      var $cardContent = document.querySelector('.card-content');
+      if($cardContent.getAttribute('contenteditable') == 'false'){
+        $cardContent.setAttribute('contenteditable', 'true');
+        $cardContent.focus();
+        $this.classList.add('isActive');
+      } else {
+        $cardContent.setAttribute('contenteditable', 'false');
+        $cardContent.blur();
+        $this.classList.remove('isActive');
+      }
+    }
 
   });
 }

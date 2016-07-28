@@ -2,7 +2,14 @@
   position: absolute;
   top: -16px;
   left: 0px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
 }
+
+.card:hover .wrap-card-options{
+  opacity: 1;
+}
+
 
 .card{
   padding: 16px;
@@ -24,6 +31,7 @@
   background-color: #FFF;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .card-options.isActive {
@@ -31,7 +39,7 @@
 }
 
 .card-content[contenteditable="true"]{
-  outline: 2px dotted rgba(0,0,0,0.5);
+  outline: 2px dashed rgba(0,0,0,0.5);
 }
 
 
@@ -44,9 +52,6 @@
   background-image : url(../../images/edit.svg);
   background-size: 65%;
 }
-
-
-
 
 [data-color="first"] {
   background-color: #45AAEE;
